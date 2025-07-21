@@ -38,80 +38,16 @@ I believe great design isn’t just about how it looks — it’s about how it w
     <div class="hero-btn" style="--i: 5">
     <a href="#" class="btn">Hire me</a>
     </div>
-    <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="Funeral iv.jpg" 
-      style="width:100%" 
-      onclick="currentSlide(1)" 
-      alt="burial flyer">
-    </div>
-    <div class="column">
-      <img class="demo cursor"
-       src="Twitter day 2.png" 
-       style="width:100%" 
-       onclick="currentSlide(2)" 
-       alt="x contest design">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="labota farm 2.png" style="width:100%" 
-      onclick="currentSlide(3)"
-       alt="labota farms flyer">
-    </div>
-    <div class="column">
-      <img class="demo cursor"
-       src="wedding R.jpg" 
-       style="width:100%"
-        onclick="currentSlide(4)"
-         alt="wedding flyer">
-    </div>
-    <div class="column">
-      <img class="demo cursor" 
-      src="coffee flyer.jpg" 
-      style="width:100%"
-      onclick="currentSlide(5)" 
-      alt="coffee flyer">
-    </div>
-    <div class="column">
-      <img class="demo cursor" 
-      src="Work in progress 2[1][1].jpg" 
-      style="width:100%" 
-      onclick="currentSlide(6)"
-       alt="preal flyer">
-    </div>
-  </div>
-     <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-</div>
-
 </section>
+<section class="scroll-container">
+  <div class="hero-container">
+  <img src="wedding R.jpg" alt="wedding flyer">
+  <img src="coffee flyer.jpg"  alt="social media flyer">
+  <img src="Work in progress 2[1][1].jpg"  alt="webninar flyer">
+  <img src="Funeral iv.jpg"  alt="burial flyer">
+  <immg src="labota farm 2.png" alt="labota farm flyer">
+</div>
+</section>
+</div>
 </body>
 </html>
